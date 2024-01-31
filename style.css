@@ -44,7 +44,7 @@ body {
   
   .Event-Name h1 {
     color: #64c7c5;
-    font-size: 3.3rem;
+    font-size: 4rem;
     /* -webkit-text-stroke: 1px #e2e0e0; */
     margin-left: 80px;
   }
@@ -894,14 +894,14 @@ body {
 
   .Event-Name input {
     width: 140px;
-    font-size: 13px;
+    font-size: 17px;
     margin-right: 10px;
   }
 
   .Event-Name h1 {
-    font-size: xx-large;
+    font-size: 3rem;
     text-transform: uppercase;
-    margin-left: 15px;
+    margin-left: 18px;
   }
 }
 
@@ -914,7 +914,7 @@ body {
 
   .Event-Name input {
     width: 110px;
-    font-size: 5px;
+    font-size: 14px;
   }
 }
 
@@ -931,7 +931,7 @@ body {
   .Event-Name input {
     width: 110px;
     margin-right: 10px;
-    font-size: 8px;
+    font-size: 14px;
   }
 
   .product .product-card {
