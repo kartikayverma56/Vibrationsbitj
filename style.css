@@ -1825,17 +1825,19 @@ body {
   
   /* Hide grid below 750px */
   @media only screen and (max-width: 749px) {
-	
-	
-	.container {
+	.tin1 {
+	  grid-template-columns: 1fr; /* Adjust for your desired layout on small screens */
+	}
+  
+	.container2 {
 	  display: flex;
 	  flex-direction: column;
 	}
-	.section {
+  
+	.section1 {
 	  width: 100%; /* Adjust width as needed */
 	}
-	*/
-}
+  }
   
 @keyframes animate
 {
