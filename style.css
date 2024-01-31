@@ -313,7 +313,7 @@ body {
 
   .product  #Ad{
     z-index: 1;
-    background: url(Ad.jpeg);
+    background: url(Ad.jpg);
     background-repeat: none;
     object-fit: cover;
     background-position: center;
@@ -327,7 +327,7 @@ body {
   }
   .product  #Master{
     z-index: 1;
-    background: url(Masterchef.jpeg);
+    background: url(Masterchef.jpg);
     background-repeat: none;
     object-fit: cover;
     background-position: center;
@@ -340,8 +340,22 @@ body {
     overflow: hidden;
   }
   
-  
-  
+   .product  #Symphony{
+    z-index: 1;
+    background: url(Symphony.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+
   .product .product-card:before {
     content: '';
     /* background: rgba(255, 255, 255, 0.1); */
@@ -665,7 +679,7 @@ body {
 
   .product .popup-card #chef {
     z-index: 2;
-    background: url(Masterchef.jpeg);
+    background: url(Masterchef.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -681,7 +695,7 @@ body {
   }
   .product .popup-card #Buzzer {
     z-index: 2;
-    background: url(Bollywood.jpeg);
+    background: url(Bollywood.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -697,7 +711,7 @@ body {
   }
   .product .popup-card #Mad {
     z-index: 2;
-    background: url(Ad.jpeg);
+    background: url(Ad.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -711,7 +725,23 @@ body {
     border-bottom-left-radius: 10px;
     overflow: hidden;
   }
-  
+
+ .product .popup-card #Band {
+    z-index: 2;
+    background: url(Symphony.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
   
   .product .popup-card .product-img img {
     z-index: 2;
