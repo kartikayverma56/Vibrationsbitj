@@ -2337,3 +2337,19 @@ body {
 	opacity: .4;
 	font-weight: 200;
   }
+.teamour{
+	color: white;
+}
+.teamour:visited {
+	color: ehite;
+  }
+  
+  /* mouse over link */
+  .teamour:hover {
+	color: hotpink;
+  }
+  
+  /* selected link */
+  .teamour:active {
+	color: blue;
+  }
