@@ -2250,6 +2250,9 @@ body {
 .heading_past{
   color: #64c7c5;
   font-family: 'Cardo', sans-serif;
+	font-size: 4vw;
+	font-weight: 700;
+	line-height: 30px;
 }
 
 .cards2{
