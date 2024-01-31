@@ -2729,7 +2729,7 @@ body {
   
   /* PAST SPONSORS */
   .heading_past{
-	color: #198799;
+	color: ##64c7c5;
 	font-family: 'Cardo', sans-serif;
   }
   
@@ -2746,7 +2746,7 @@ body {
   
 	height: 100%;
 	width: 100%;
-	filter: grayscale(100%);
+	filter: grayscale(0%);
 	box-shadow: 0 0 20px #333;
 	object-fit: cover;
   }
