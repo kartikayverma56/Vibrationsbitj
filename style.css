@@ -313,7 +313,7 @@ body {
 
   .product  #Ad{
     z-index: 1;
-    background: url(Ad.jpg);
+    background: url(Ad.jpeg);
     background-repeat: none;
     object-fit: cover;
     background-position: center;
@@ -327,7 +327,7 @@ body {
   }
   .product  #Master{
     z-index: 1;
-    background: url(Masterchef.jpg);
+    background: url(Masterchef.jpeg);
     background-repeat: none;
     object-fit: cover;
     background-position: center;
@@ -679,7 +679,7 @@ body {
 
   .product .popup-card #chef {
     z-index: 2;
-    background: url(Masterchef.jpg);
+    background: url(Masterchef.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -711,7 +711,7 @@ body {
   }
   .product .popup-card #Mad {
     z-index: 2;
-    background: url(Ad.jpg);
+    background: url(Ad.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
