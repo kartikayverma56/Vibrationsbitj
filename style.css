@@ -2824,6 +2824,7 @@ body {
 	color: #fff;
   }
   .footer-content{
+	  background: #010C20;
 	display: flex;
 	align-items: center;
 	justify-content: center;
