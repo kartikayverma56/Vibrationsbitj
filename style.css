@@ -327,7 +327,7 @@ body {
   }
   .product  #Master{
     z-index: 1;
-    background: url(Masterchef.jpeg);
+    background: url(Materchef.jpeg);
     background-repeat: none;
     object-fit: cover;
     background-position: center;
@@ -679,7 +679,7 @@ body {
 
   .product .popup-card #chef {
     z-index: 2;
-    background: url(Masterchef.jpeg);
+    background: url(Materchef.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
