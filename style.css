@@ -2735,6 +2735,13 @@ body {
 	color: ##64c7c5;
 	font-family: 'Cardo', sans-serif;
   }
+
+.container_spons h1{
+  margin: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 4vw;
+}
   
   .cards2{
 	width: 15vw;
