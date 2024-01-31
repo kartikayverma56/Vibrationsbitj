@@ -499,6 +499,22 @@ body {
 	margin-left: 0px;
 	/* -webkit-text-stroke: 0.1vw #fff; */
   }
+ .text-blk.headingText2 {
+	
+	font-size: 4vw;
+	font-weight: 700;
+	line-height: 30px;
+	color:#64c7c5	;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	/* -webkit-text-stroke: 0.1vw #fff; */
+  }
   
   .text-blk.headingText ::before{
 	border-right: 2px solid white;
@@ -840,6 +856,10 @@ body {
 	}
   
 	.text-blk.headingText {
+	  text-align: center;
+	  font-size: 29px;
+	}
+	  .text-blk.headingText2 {
 	  text-align: center;
 	  font-size: 29px;
 	}
