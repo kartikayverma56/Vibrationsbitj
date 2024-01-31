@@ -27,274 +27,769 @@ body {
   justify-content: center;
   align-items: center;
   background: #151515;
-  overflow-x: hidden; */
-  overflow-x: hidden;
+  */
+	overflow-x: hidden;
 }
 
 .Event-Name {
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  justify-content: space-between;
-  height: 10vh;
-  flex-wrap: wrap;
-  background-color: #010C20;
-  /* background-color: #009DD2; */
-  /* left: 100px; */
-}
-
-.Event-Name h1 {
-  color: #64c7c5;
-  font-size: 3.3rem;
-  /* -webkit-text-stroke: 1px #e2e0e0; */
-  margin-left: 40px;
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search-container label {
-  color: white;
-  margin-right: 10px;
-  font-weight: 800;
-}
-
-.search-container input {
-  /* border: 2px solid #34b8a5; */
-  border: none;
-  /* outline: none; */
-  background: #64c7c5;
-  /* background: #553b98; */
-  width: 200px;
-  height: 3.5vh;
-  padding: 5px;
-  border-radius: 23px;
-  margin-right: 20px;
-  color: #010C20;
-  font-size: 20px;
-  font-weight: bolder;
-}
-
-.search-container input::placeholder {
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  color: #553b98;
-  font-size: 18px;
-  padding-left: 2px;
-  font-weight: 800;
-  /* text-align: center; */
-}
-
-.container {
-  background-color: #010C20;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* align-items: ; */
-  width: 100vw;
-  min-height: 100vh;
-  /* border: 2px solid gainsboro; */
-}
-
-/*Styles for product card*/
-
-.product .product-card {
-  z-index: 1;
-  background: #1D212B;
-  position: relative;
-  width: 300px;
-  height: 400px;
-  margin: 30px;
-  border-radius: 10px;
-}
-
-.product .product-card:before {
-  content: '';
-  /* background: rgba(255, 255, 255, 0.1); */
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.product .product-card .product-img {
-  z-index: 1;
-  position: absolute;
-  max-width: 350px;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.product .product-card .name {
-  z-index: 2;
-  /* color: #009DD2; */
-  color: #64c7c5;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 130px;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-
-
-.product .product-card .popup-btn {
-  z-index: 2;
-  /* color: #33175c; */
-  color: #009DD2;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    flex-wrap: wrap;
+    background-color: #010C20;
+    /* background-color: #009DD2; */
+  }
   
-  background: #010C20;
-  /* border: 2px solid #33175c; */
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  /* transition: all .5s ease-in-out; */
-}
+  .Event-Name h1 {
+    color: #64c7c5;
+    font-size: 3.3rem;
+    /* -webkit-text-stroke: 1px #e2e0e0; */
+    margin-left: 80px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-container label {
+    color: white;
+    margin-right: 10px;
+    font-weight: 800;
+  }
+  
+  .search-container input {
+    /* border: 2px solid #34b8a5; */
+    border: none;
+    /* outline: none; */
+    background: #fff;
+    /* background: #553b98; */
+    width: 200px;
+    height: 3.5vh;
+    padding: 5px;
+    border-radius: 23px;
+    margin-right: 70px;
+    color: #010C20;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .search-container input::placeholder {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color: #553b98;
+    font-size: 18px;
+    padding-left: 2px;
+    font-weight: 800;
+    /* text-align: center; */
+  }
+  
+  .container {
+    background-color: #010C20;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: ; */
+    width: 100vw;
+    min-height: 100vh;
+    transition: all .5s ease-in-out;
+    /* border: 2px solid gainsboro; */
+  }
+  
+  /*Styles for product card*/
+  
+  .product .product-card {
+    z-index: 1;
+    background: url(Rangmaze.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
-.product .product-card .popup-btn:hover {
-  background: #fff;
-  border: 2px solid #010C20;
-}
 
-/*Styles for popup view*/
 
-.product .popup-view {
-  z-index: 2;
-  /* background: rgba(255, 255, 255, 0.5); */
-  background: rgba(106, 105, 105, 0.5);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-}
 
-.product .popup-view.active {
-  opacity: 1;
-  visibility: visible;
-}
 
-.product .popup-card {
-  position: relative;
-  display: flex;
-  width: 800px;
-  height: 500px;
-  margin: 20px;
-}
+  /* changes */
 
-.product .popup-card .product-img {
-  z-index: 2;
-  background: #1D212B;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45%;
-  height: 90%;
-  transform: translateY(25px);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
 
-.product .popup-card .product-img img {
-  z-index: 2;
-  position: relative;
-  width: 450px;
-  left: -50px;
-}
 
-.product .popup-card .info {
-  z-index: 2;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 55%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 40px;
-  border-radius: 10px;
-}
 
-.product .popup-card .close-btn {
-  color: #553b98;
-  z-index: 3;
-  position: absolute;
-  right: 0;
-  font-size: 20px;
-  margin: 20px;
-  cursor: pointer;
-}
 
-.product .popup-card .info h2 {
-  font-size: 40px;
-  line-height: 20px;
-  margin: 10px;
-  color: #e71b63;
-}
 
-.product .popup-card .info h2 span {
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #553b98;
-}
 
-.product .popup-card .info p {
-  font-size: 15px;
-  margin: 10px;
-}
 
-.product .popup-card .info .price {
-  font-size: 45px;
-  font-weight: 300;
-  margin: 10px;
-}
+  .product  #Aurora{
+    z-index: 1;
+    background: url(Aurora.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Egg{
+    z-index: 1;
+    background: url(Egg\ o\ shuttle.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Charismatrix{
+    z-index: 1;
+    background: url(Charismatic.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #BIT{
+    z-index: 1;
+    background: url(Bit\ idol.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Footloose{
+    z-index: 1;
+    background: url(Footlose.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Rangmaze{
+    z-index: 1;
+    background: url(Rangmaze.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Campus{
+    z-index: 1;
+    background: url(Campus\ Hulk.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Bollywood{
+    z-index: 1;
+    background: url(Bollywood.jpeg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Verse{
+    z-index: 1;
+    background: url(verse.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Sur{
+    z-index: 1;
+    background: url(Sur\ sangam.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Two{
+    z-index: 1;
+    background: url(Two\ to\ tango.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Ensemble{
+    z-index: 1;
+    background: url(Ensemble.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Hastakari{
+    z-index: 1;
+    background: url(Hastakari.jpg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
-.product .popup-card .info .add-cart-btn {
-  color: #e2e0e0;
-  background: #553b98;
-  box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 10px auto;
-  padding: 10px 50px;
-  border-radius: 20px;
-}
+  .product  #Ad{
+    z-index: 1;
+    background: url(Ad.jpeg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .product  #Master{
+    z-index: 1;
+    background: url(Masterchef.jpeg);
+    background-repeat: none;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  
+  
+  .product .product-card:before {
+    content: '';
+    /* background: rgba(255, 255, 255, 0.1); */
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .product .product-card .product-img{
+    z-index: 1;
+    position: absolute;
+    max-width: 300px;
+    background-position: cover;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  
+  .product .product-card .name {
+    z-index: 2;
+    /* color: #009DD2; */
+    /* color: #64c7c5; */
+    color: #10c3ff;
+    -webkit-text-stroke: 1px #553b98;
+    font-weight: bolder;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 130px;
+    font-size: 39px;
+    letter-spacing: 1px;
+  }
+  
+  
+  
+  .product .product-card .popup-btn {
+    z-index: 2;
+    /* color: #33175c; */
+    color: #009DD2;
+    
+    background: #010C20;
+    /* border: 2px solid #33175c; */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* transition: all .5s ease-in-out; */
+  }
+  
+  .product .product-card .popup-btn:hover {
+    background: #fff;
+    border: 2px solid #010C20;
+  }
+  
+  /*Styles for popup view*/
+  
+  .product .popup-view {
+    z-index: 2;
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: rgba(106, 105, 105, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  
+  .product .popup-view.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .product .popup-card {
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+  }
+  
+  /* .product .popup-card .product-img {
+    z-index: 2;
+    background: #1D212B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  } */
 
-.product .popup-card .info .add-wish {
-  color: #009DD2;
-  font-size: 16px;
-  text-align: center;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+
+
+
+
+  /* changes */
+
+
+
+
+
+
+  .product .popup-card #shuttle {
+    z-index: 2;
+    background: url(Egg\ o\ shuttle.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Rangoli {
+    z-index: 2;
+    background: url(Aurora.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Matrix {
+    z-index: 2;
+    background: url(Charismatic.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Idol {
+    z-index: 2;
+    background: url(Bit\ idol.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Solo {
+    z-index: 2;
+    background: url(Footlose.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+
+  .product .popup-card #Poster {
+    z-index: 2;
+    background: url(Rangmaze.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+
+  .product .popup-card #Hulk {
+    z-index: 2;
+    background: url(Campus\ Hulk.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Horizon {
+    z-index: 2;
+    background: url(verse.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Sangam {
+    z-index: 2;
+    background: url(Sur\ sangam.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #To {
+    z-index: 2;
+    background: url(Two\ to\ tango.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Group{
+    z-index: 2;
+    background: url(Ensemble.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Hand {
+    z-index: 2;
+    background: url(Hastakari.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+
+  .product .popup-card #chef {
+    z-index: 2;
+    background: url(Masterchef.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Buzzer {
+    z-index: 2;
+    background: url(Bollywood.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .product .popup-card #Mad {
+    z-index: 2;
+    background: url(Ad.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  
+  
+  .product .popup-card .product-img img {
+    z-index: 2;
+    position: relative;
+    width: 350px;
+    left: 0px;
+  }
+  
+  .product .popup-card .info {
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .product .popup-card .close-btn {
+    color: #553b98;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .product .popup-card .info h2 {
+    font-size: 40px;
+    line-height: 20px;
+    margin: 10px;
+    color: #e71b63;
+  }
+  
+  .product .popup-card .info h2 span {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #553b98;
+  }
+  
+  .product .popup-card .info p {
+    font-size: 15px;
+    margin: 10px;
+  }
+  
+  .product .popup-card .info .price {
+    font-size: 45px;
+    font-weight: 300;
+    margin: 10px;
+  }
+  
+  .product .popup-card .info .add-cart-btn {
+    color: #e2e0e0;
+    background: #553b98;
+    box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px auto;
+    padding: 10px 50px;
+    border-radius: 20px;
+  }
+  
+  .product .popup-card .info .add-wish {
+    color: #009DD2;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+
 
 /*Responsive styles*/
 
@@ -418,8 +913,6 @@ body {
     font-size: 12px;
   }
 }
-
-
 
 
 /* About Us */
