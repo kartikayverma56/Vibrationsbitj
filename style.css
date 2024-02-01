@@ -63,8 +63,8 @@ body {
   
   .search-container input {
     /* border: 2px solid #34b8a5; */
-    border: none;
-    /* outline: none; */
+    border-bottom: 4px solid #64c7c5;
+    outline: none;
     background: #fff;
     /* background: #553b98; */
     width: 200px;
@@ -385,7 +385,7 @@ body {
     /* color: #009DD2; */
     /* color: #64c7c5; */
     color: #010C20;
-    -webkit-text-stroke: 1px #009DD2;
+    -webkit-text-stroke: 1px #fff;
     font-weight: bolder;
     position: absolute;
     width: 100%;
