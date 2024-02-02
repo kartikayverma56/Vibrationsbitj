@@ -2902,10 +2902,10 @@ body {
 	font-weight: 200;
   }
 .teamour{
-	color: white;
+	color: #b9134f;
 }
 .teamour:visited {
-	color: ehite;
+	color: white;
   }
   
   /* mouse over link */
@@ -2915,5 +2915,5 @@ body {
   
   /* selected link */
   .teamour:active {
-	color: blue;
+	color: royalblue;
   }
