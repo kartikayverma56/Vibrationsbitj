@@ -2917,3 +2917,9 @@ body {
   .teamour:active {
 	color: royalblue;
   }
+@media screen and (min-width: 1550px) {
+  .text-blk.headingText2 {
+	  font-size:3vw;
+
+}
+}
