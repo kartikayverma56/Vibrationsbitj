@@ -69,3 +69,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
   });
   
+
+
+//Sort code events
+$(document).ready(function(){
+      $('.list').click(function(){
+        const value=$(this).attr('data-filter');
+        if (value=='all') {
+          $('.product-card').show('1000');
+        }else{
+          $('.product-card').not('.'+value).hide('1000');
+          $('.product-card').filter('.'+value).show('1000');
+        }
+      })
+    })
