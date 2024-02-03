@@ -82,4 +82,8 @@ $(document).ready(function(){
           $('.product-card').filter('.'+value).show('1000');
         }
       })
+//adding active class in buttons..
+      $('.list').click(function(){
+        $(this).addClass('Eventactive').siblings().removeClass('Eventactive');
+      })
     })
