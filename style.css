@@ -63,12 +63,12 @@ body {
   
   .search-container input {
     /* border: 2px solid #34b8a5; */
-    border-bottom: 4px solid #64c7c5;
+    border-bottom: 2px solid #64c7c5;
     outline: none;
     background: #fff;
     /* background: #553b98; */
     width: 200px;
-    height: 3.5vh;
+    height: 4vh;
     padding: 5px;
     border-radius: 23px;
     margin-right: 70px;
